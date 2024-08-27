@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Mi app de selfie</title>
+</head>
+
+<body>
+<div class="container">
+    <center>
+        <h1>app de voz selfie
+             <img id="logo_img" src="pinki.png" >
+        </h1>
+        <hr>
+        <h4 style="color: orangered;">Por favor presiona permitir cuando aparezca la ventana emergente después de dar el comando de voz.</h4>
+         <div class="form-group">
+         <h3>ahora di "toma mi selfie"</h3>
+         <label>tu output de la voz:</label>
+         <textarea class="form-control"  id="text-box" readonly></textarea>
+        </div>
+        <button class="btn-primary" onclick="start()">iniciar</button>
+        <p>presiona el boton para iniciar</p>
+        <label>Tu camara web:</label>
+        <div id="camera"></div>
+        <br>
+        <label>Tu selfie aparecerá aquí</label>
+        <div id="result"></div>
+    </center>
+</div>
+<script src="main.js"></script> 
+</body>
+
+</html>
